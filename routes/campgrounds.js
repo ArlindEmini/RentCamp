@@ -7,7 +7,7 @@ const campground = require("../models/campground");
 const middlewareObj = require("../middleware");
 
 
-
+//
 // CAMPGROUNDS ROUTES===========
 //INDEX 
 // Shows  all the campgrounds that are in the database by renderin the campgrounds.ejs
@@ -21,9 +21,8 @@ router.get("/campgrounds", function(req, res){
             res.render("campgrounds/index", {campgrounds: allCampgrounds, currentUser: req.user});
         }
     });
-
-    
 });
+
 
 //CREATE
 // get the name image and description from new.ejs Form and add the new campground to the database
